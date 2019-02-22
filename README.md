@@ -34,7 +34,7 @@ Once it's running, fire up your favorite browser and surf http://localhost:3000/
 
 Then, look at the stack trace in either the browser or the console where the application is running and look at the first line of the stack trace.
 
-##Windows
+## Windows
 On Windows, here is what I get from each of the configurations:
 * **dev**  
   This configuration produces the correct path to the original source file:
@@ -58,7 +58,7 @@ On Windows, here is what I get from each of the configurations:
       at c:\jmpdev\usr\sasewh\git\webpack-issues\build\webpack:\src\server\routes\index.js:13:1
   ```
   
-##Mac
+## Mac
 And here is what I get from each configuration on the Mac, none of which are any good:
 * **dev**  
   In the "close but no cigar" category, with this configuration I get:
