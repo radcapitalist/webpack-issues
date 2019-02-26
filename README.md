@@ -84,7 +84,8 @@ And here is what I get from each configuration on the Mac, none of which are any
   ```
       at /Users/sasewh/Development/git/webpack-issues/build/webpack:/src/server/routes/index.js:13:1
   ```
-  
+## Production Builds
+If I change the `mode` option from `development` to `production` and change nothing else, call stacks point into the bundle rather than to original source code.  I thought source maps were supposed to work the same in production and development, but you just don't ship your source maps in production?  
 
 
   
