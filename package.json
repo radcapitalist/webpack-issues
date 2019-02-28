@@ -8,10 +8,12 @@
     "build-dev-2": "webpack --config ./config/webpack-server-dev-2.config.js --info-verbosity verbose",
     "build-dev-3": "webpack --config ./config/webpack-server-dev-3.config.js --info-verbosity verbose",
     "build-dev-4": "webpack --config ./config/webpack-server-dev-4.config.js --info-verbosity verbose",
+    "build-prod": "webpack --config ./config/webpack-server-prod.config.js --info-verbosity verbose",
     "dev": "node ./build/bundle-server-dev.js",
     "dev-2": "node ./build/bundle-server-dev-2.js",
     "dev-3": "node ./build/bundle-server-dev-3.js",
-    "dev-4": "node ./build/bundle-server-dev-4.js"
+    "dev-4": "node ./build/bundle-server-dev-4.js",
+    "prod": "node ./build/bundle-server-prod.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

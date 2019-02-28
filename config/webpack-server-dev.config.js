@@ -24,8 +24,8 @@ module.exports = merge(common, {
 		// https://webpack.js.org/plugins/source-map-dev-tool-plugin/
 		new webpack.SourceMapDevToolPlugin({
 			filename: "[file].map",
-		//	fallbackModuleFilenameTemplate: '[absolute-resource-path]',
-		//	moduleFilenameTemplate: '[absolute-resource-path]',
+			fallbackModuleFilenameTemplate: '[absolute-resource-path]',
+			moduleFilenameTemplate: '[absolute-resource-path]',
 		}),
 
 		// According to https://jlongster.com/Backend-Apps-with-Webpack--Part-I, the following

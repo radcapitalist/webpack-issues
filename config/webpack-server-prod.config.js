@@ -36,6 +36,8 @@ module.exports = merge(common, {
 			// https://itnext.io/using-sourcemaps-on-production-without-revealing-the-source-code-%EF%B8%8F-d41e78e20c89
 			//publicPath: 'https://localhost:5050',
 			filename: '[file].map',
+			fallbackModuleFilenameTemplate: '[absolute-resource-path]',
+			moduleFilenameTemplate: '[absolute-resource-path]',
 		}),
 
 		// According to https://jlongster.com/Backend-Apps-with-Webpack--Part-I, the following
