@@ -26,8 +26,10 @@ module.exports = merge(common, {
 		//devtoolFallbackModuleFilenameTemplate: '[absolute-resource-path]',
 	},
 
+	devtool: false,	// Because I'm using the plug-in
+
 	plugins: [
-		new CleanWebpackPlugin(pathsToClean, cleanOptions),
+//		new CleanWebpackPlugin(pathsToClean, cleanOptions),
 		new webpack.SourceMapDevToolPlugin({
 			// This needs more research.  The idea is to create source maps
 			// but not ship them, so that the developer can find source maps
@@ -44,13 +46,11 @@ module.exports = merge(common, {
 		// causes stack traces to be source-mapped.  However, when using SourceMapDevToolPlugin
 		// rather than "devtool: 'source-map'", I found I did not need source-map-support.
 		// Will we need it on the client?  We'll have to see.
-		/*
 		new webpack.BannerPlugin({
 			banner: 'require("source-map-support").install();',
 			raw: true,
 			entryOnly: true
 		}),
-		*/
 
 	],
 });

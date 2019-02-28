@@ -21,6 +21,10 @@ module.exports = merge(common, {
 
 	plugins: [
 
+		// The combination of having fallbackModuleFilenameTemplate and moduleFilenameTemplate
+		// options for SoruceMapDevToolPlugin *and* having source-map-support installed
+		// by the banner-plugin solve stack trace issues!
+
 		// https://webpack.js.org/plugins/source-map-dev-tool-plugin/
 		new webpack.SourceMapDevToolPlugin({
 			filename: "[file].map",
@@ -33,9 +37,9 @@ module.exports = merge(common, {
 		// rather than "devtool: 'source-map'", I found I did not need source-map-support.
 		// Will we need it on the client?  We'll have to see.
 		new webpack.BannerPlugin({
-				banner: 'require("source-map-support").install();',
-				raw: true,
-				entryOnly: true
+			banner: 'require("source-map-support").install();',
+			raw: true,
+			entryOnly: true
 		}),
 
 	],

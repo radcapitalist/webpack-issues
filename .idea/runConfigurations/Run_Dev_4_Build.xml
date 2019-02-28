@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Dev 4 Build" type="NodeJSConfigurationType" factoryName="Node.js" node-parameters="--expose-natives-as=v8natives" path-to-js-file="./build/bundle-server-dev-4.js" working-dir="$PROJECT_DIR$">
+    <method />
+  </configuration>
+</component>
